@@ -93,7 +93,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 }
 
 });
-
+const fs = require('fs');
 let antihack = JSON.parse(fs.readFileSync('./antihack.json' , 'utf8'));//require antihack.json file
 client.on('message', message => {
     if(message.content.startsWith(prefix + "toggleAntihack")) {
