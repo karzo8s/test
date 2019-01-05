@@ -238,7 +238,7 @@ client.on('message', message => {
           })
       };
       });
-      fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
+const data = require("./data.json");
           if (err) console.log(err.message);
       });
   })
