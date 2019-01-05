@@ -238,7 +238,6 @@ client.on('message', message => {
           })
       };
       });
-const data = require("./data.json");
+    const data = require("./data.json");
           if (err) console.log(err.message);
-      });
   })
