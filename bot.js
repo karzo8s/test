@@ -207,7 +207,7 @@ client.on('message', message => {
           },60000)
       };
       });
-      fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
+    const data = require("./data.json");
           if (err) console.log(err.message);
       });
   });
