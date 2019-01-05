@@ -209,7 +209,6 @@ client.on('message', message => {
       });
     const data = require("./data.json");
           if (err) console.log(err.message);
-      });
   });
   client.on('channelDelete', (u) => {
       u.guild.fetchAuditLogs().then( s => {
