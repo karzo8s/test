@@ -174,9 +174,7 @@ client.on('message', message => {
           })
       };
       });
-      fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
-          if (err) console.log(err.message);
-      });
+    const data = require("./data.json");
   });
   client.on('roleDelete', (u) => {
       u.guild.fetchAuditLogs().then( s => {
@@ -208,7 +206,6 @@ client.on('message', message => {
       };
       });
     const data = require("./data.json");
-          if (err) console.log(err.message);
   });
   client.on('channelDelete', (u) => {
       u.guild.fetchAuditLogs().then( s => {
